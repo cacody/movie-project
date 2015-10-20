@@ -126,8 +126,13 @@ movie_tile_content = '''
 </div>
 '''
 
-# Create the tile for each instance of class Movie
+
 def create_movie_tiles_content(movies):
+    """Creates a tile element for each instance of Class.
+
+    
+
+    """
     # The HTML content for this section of the page
     content = ''
     for movie in movies:
