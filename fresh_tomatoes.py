@@ -126,6 +126,7 @@ movie_tile_content = '''
 </div>
 '''
 
+# Create the tile for each instance of class Movie
 def create_movie_tiles_content(movies):
     # The HTML content for this section of the page
     content = ''
@@ -144,6 +145,7 @@ def create_movie_tiles_content(movies):
         )
     return content
 
+# Output the created tiles into the HTML template
 def open_movies_page(movies):
   # Create or overwrite the output file
   output_file = open('fresh_tomatoes.html', 'w')

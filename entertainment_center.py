@@ -2,7 +2,7 @@ import fresh_tomatoes
 import media
 
 
-
+# Create selected instances of class Movie with the following data
 empire = media.Movie("The Empire Strikes Back",
                          "The saga continues as our heroes enter their darkest period",
                          "http://upload.wikimedia.org/wikipedia/en/3/3c/SW_-_Empire_Strikes_Back.jpg",
@@ -43,11 +43,9 @@ the_golden_child = media.Movie("The Golden Child",
                                 "https://www.youtube.com/watch?v=_Pd0-Je3XDQ",
                                 "Classic Eddie. It warms the soul.")
 
+# Store all of the instances of Class into one variable 
 movies = [empire, pineapple, mystery_men, the_burbs, illusionist, the_golden_child]
 
+# Run the function from fresh_tomatoes.py that assembles all the pieces using the movie variable above
 fresh_tomatoes.open_movies_page(movies)
-
-#print(media.Movie.VALID_RATINGS)
-
-#print(media.Movie.__module__)
 
