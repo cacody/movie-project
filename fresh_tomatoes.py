@@ -128,11 +128,9 @@ movie_tile_content = '''
 
 
 def create_movie_tiles_content(movies):
-    """Creates a tile element for each instance of Class.
+    """Creates a tile element for each instance of Class."""
 
-    
 
-    """
     # The HTML content for this section of the page
     content = ''
     for movie in movies:
@@ -150,18 +148,18 @@ def create_movie_tiles_content(movies):
         )
     return content
 
-# Output the created tiles into the HTML template
+
 def open_movies_page(movies):
-  # Create or overwrite the output file
-  output_file = open('fresh_tomatoes.html', 'w')
+    """ Output the tiles into the template and assemble the entire HTML. """
 
-  # Replace the placeholder for the movie tiles with the actual dynamically generated content
-  rendered_content = main_page_content.format(movie_tiles=create_movie_tiles_content(movies))
 
-  # Output the file
-  output_file.write(main_page_head + rendered_content)
-  output_file.close()
-
-  # open the output file in the browser
-  url = os.path.abspath(output_file.name)
-  webbrowser.open('file://' + url, new=2) # open in a new tab, if possible
+    # Create or overwrite the output file
+    output_file = open('fresh_tomatoes.html','w')
+    # Replace the placeholder for the movie tiles with the actual dynamically generated content
+    rendered_content = main_page_content.format(movie_tiles=create_movie_tiles_content(movies))
+    # Output the file
+    output_file.write(main_page_head + rendered_content)
+    output_file.close()
+    # open the output file in the browser
+    url = os.path.abspath(output_file.name)
+    webbrowser.open('file://' + url, new=2) # open in a new tab, if possible
