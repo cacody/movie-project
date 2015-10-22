@@ -16,7 +16,7 @@ Generate an HTML page with a tiled list of my favorite movies and the ability to
 
 ##How to run
 
-Open the file, *fresh_tomatoes.html*, in a web browser. If the file does not exist, run the file, *fresh_tomatoes.py*, with a python interpreter and both the *fresh_tomatoes_
+Open the file, *fresh_tomatoes.html*, in a web browser. If the file does not exist, run the file, *fresh_tomatoes.py*, with a python interpreter and both the *fresh_tomatoes*.
 
 ##Author
 
